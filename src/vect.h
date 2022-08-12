@@ -31,8 +31,10 @@ typedef unsigned long limb_t;
 #   define LIMB_T_BITS   64
 #  else
 #   define LIMB_T_BITS   32
-#   define __BLST_NO_ASM__
 #  endif
+# ifndef __BLST_NO_ASM__
+#  define __BLST_NO_ASM__
+# endif
 #endif
 
 /*
